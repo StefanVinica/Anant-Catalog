@@ -58,13 +58,13 @@ layout: layouts/base.njk
     <dt class="inline-block font-bold mr-6">Open Source</dt>
     <dd class="inline-block sr-only">Yes</dd>
     {%- endif %}
-    {%- if language %}
-    <dt class="inline-block font-bold">Language:</dt>
-    <dd class="inline-block mr-6">{{ language }}</dd>
+    {%- if section %}
+    <dt class="inline-block font-bold">section:</dt>
+    <dd class="inline-block mr-6">{{ section }}</dd>
     {%- endif %}
-    {%- if license and license.length > 0 %}
-    <dt class="inline-block font-bold">License:</dt>
-    <dd class="inline-block mr-6">{{ license | join(", ") }}</dd>
+    {%- if resources and resources.length > 0 %}
+    <dt class="inline-block font-bold">resources:</dt>
+    <dd class="inline-block mr-6">{{ resources | join(", ") }}</dd>
     {%- endif %}
     {%- if templates and templates.length > 0 %}
     <dt class="inline-block font-bold">Templates:</dt>

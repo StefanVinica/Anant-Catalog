@@ -332,9 +332,9 @@ details[open] .summary-swap-open {
 }
 .filter-opensource--hide,
 .filter-typeofcms--hide,
-.filter-language--hide,
+.filter-section--hide,
 .filter-template--hide,
-.filter-license--hide,
+.filter-resources--hide,
 .filter-country--hide {
   display: none !important;
 }
