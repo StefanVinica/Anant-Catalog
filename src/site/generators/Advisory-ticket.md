@@ -1,5 +1,5 @@
 ---
-title: Platform Discovery
+title: Advisory ticket
 est: 24h
 Fulfillment Method: 
 section:

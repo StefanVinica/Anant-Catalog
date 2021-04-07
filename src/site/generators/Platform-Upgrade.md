@@ -1,11 +1,11 @@
 ---
-title: Platform Discovery
+title: Platform Upgrade
 est: 24h
 Fulfillment Method: 
 section:
-  - Architecture
+  - Engineering
 resources:
-  - Platform Architect
+  - Data Engineer
 Deliverables:  
 description: 
 ---

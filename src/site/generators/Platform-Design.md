@@ -6,10 +6,8 @@ section:
   - Architecture
 resources:
   - Platform Architect
-Deliverables:
-  
-
-description: something
+Deliverables:  
+description: 
 ---
 
 desc

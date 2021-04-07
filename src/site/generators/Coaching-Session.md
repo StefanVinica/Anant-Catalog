@@ -1,5 +1,5 @@
 ---
-title: Platform Discovery
+title: Coaching Session
 est: 24h
 Fulfillment Method: 
 section:

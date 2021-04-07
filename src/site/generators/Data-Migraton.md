@@ -1,12 +1,12 @@
 ---
-title: Data Model Design
-est: 24h
+title: Data Migration 
+est: 2h
 Fulfillment Method: 
 section:
   - Engineering
 resources:
   - DevOps Engineer
-  - Data Engineer
+  - Platform Analyst
 Deliverables:  
 description: 
 ---

@@ -1,11 +1,11 @@
 ---
-title: Platform Discovery
+title: Data Import
 est: 24h
 Fulfillment Method: 
 section:
-  - Architecture
+  - Operations
 resources:
-  - Platform Architect
+  - Platform Analyst
 Deliverables:  
 description: 
 ---

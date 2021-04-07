@@ -1,11 +1,11 @@
 ---
-title: Platform Discovery
+title: Data Engineer
 est: 24h
 Fulfillment Method: 
 section:
-  - Architecture
+  - Resources
 resources:
-  - Platform Architect
+  - Data Engineer
 Deliverables:  
 description: 
 ---

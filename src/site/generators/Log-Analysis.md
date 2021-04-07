@@ -1,9 +1,9 @@
 ---
-title: Platform Discovery
+title: Log Analysis
 est: 24h
 Fulfillment Method: 
 section:
-  - Architecture
+  - Operations
 resources:
   - Platform Architect
 Deliverables:  

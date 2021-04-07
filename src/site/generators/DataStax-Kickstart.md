@@ -1,11 +1,11 @@
 ---
-title: Platform Discovery
+title: DataStax Kickstart
 est: 24h
 Fulfillment Method: 
 section:
-  - Architecture
+  - Engineering
 resources:
-  - Platform Architect
+  - Data Engineer
 Deliverables:  
 description: 
 ---

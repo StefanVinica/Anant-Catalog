@@ -6,8 +6,8 @@ section:
   - Resources
 resources:
   - DevOps Engineer
-Deliverables:  
-description: 
+Deliverables:
+description: something
 ---
 
 desc

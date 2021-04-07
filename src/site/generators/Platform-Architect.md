@@ -1,13 +1,13 @@
 ---
-title: Platform Discovery
+title: Platform Architect
 est: 24h
 Fulfillment Method: 
 section:
-  - Architecture
+  - Resources
 resources:
   - Platform Architect
-Deliverables:  
-description: 
+Deliverables:
+description: something
 ---
 
 desc

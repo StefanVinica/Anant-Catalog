@@ -6,10 +6,8 @@ section:
   - Resources
 resources:
   - Platform Analyst
-Deliverables:  
-description: 
+Deliverables:
+description: something
 ---
 
 desc
-
-

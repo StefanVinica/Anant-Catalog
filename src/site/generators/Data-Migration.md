@@ -1,11 +1,11 @@
 ---
-title: Platform Discovery
+title: Data Migration
 est: 24h
 Fulfillment Method: 
 section:
-  - Architecture
+  - Engineering
 resources:
-  - Platform Architect
+  - DevOps Engineer
 Deliverables:  
 description: 
 ---
