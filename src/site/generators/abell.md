@@ -8,7 +8,7 @@ resources:
   - DevOps Engineer
 description: A JavaScript based static-site-generator to help you create JSON, Markdown, or static-data based websites.
 twitter: AbellLand
-startertemplaterepo: https://github.com/abelljs/abell-starter-minima
+
 ---
 
 Abell is a Node.js based static-site-generator to help you create JSON, Markdown, or static-data based websites. 
