@@ -75,7 +75,7 @@ layout: layouts/base.njk
     <dd class="inline-block mr-6">{{ typeofcms }}</dd>
     {%- endif %}
     {%- if supportedgenerators %}
-    <dt class="inline-block font-bold">Supported Site Generators:</dt>
+    <dt class="inline-block font-bold">Supported Service Catalog:</dt>
     <dd class="inline-block mr-6">{{ supportedgenerators | join(", ") }}</dd>
     {%- endif %}
   </dl>
@@ -95,6 +95,6 @@ layout: layouts/base.njk
   </a>
   {% endif %}
   <p class="italic my-8">
-    Find more {% if page.url.includes("/generators/") %}<a href="/generators/" class="underline">static site generators</a>{% else %}<a href="/headless-cms/" class="underline">headless content management systems</a>{% endif %}.
+    Find more {% if page.url.includes("/generators/") %}<a href="/generators/" class="underline">static Service Catalog</a>{% else %}<a href="/headless-cms/" class="underline">headless content management systems</a>{% endif %}.
   </p>
 </div>

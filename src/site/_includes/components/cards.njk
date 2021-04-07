@@ -1,7 +1,7 @@
 {% macro repo(item, loopIndex, githubData) %}
 <div id="{{item.id}}" class="generator-card flex flex-col h-full"
   data-sort-name="{{ item.data.title | lower }}"
-  {%- if githubData[item.data.repo].stars !== "" %} data-sort-githubstars-numeric-descending="{{ githubData[item.data.repo].stars }}"{% endif %}
+  {%- if githubData[item.data.repo].stars !== "" %} data-sort-githubstars-numeric-descending="{{ githubData[item.data.section].stars }}"{% endif %}
   {%- if item.data.typeofcms %} data-filter-typeofcms="{{ item.data.typeofcms | lower }}"{% endif %}
   {%- if item.data.opensource %} data-filter-opensource="{{ item.data.opensource | lower }}"{% endif %}
   data-filter-template="{{ (item.data.templates or []) | join(",") | lower }}"
@@ -68,7 +68,7 @@
         <dd class="col-span-3">{{ item.data.typeofcms }}</dd>
         {%- endif %}
         {%- if item.data.supportedgenerators %}
-        <dt class="col-span-2 font-bold">Supported Site Generators:</dt>
+        <dt class="col-span-2 font-bold">Supported Service Catalog:</dt>
         <dd class="col-span-3 flex items-end">{{ item.data.supportedgenerators | join(", ") }}</dd>
         {%- endif %}
       </dl>

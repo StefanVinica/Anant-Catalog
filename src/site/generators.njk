@@ -1,14 +1,14 @@
 ---
-title: Static Site Generators - Top Open Source SSGs
-description: Check out this showcase of some of the best, open source static site generators. This is community-drive so be sure to submit your favorite today!
+title: Static Service Catalog 
+description: Check out Service Catalog.
 layout: layouts/base.njk
 ---
 {% import "components/cards.njk" as cards %}
 
 <section class="md:mt-20">
-  <h1 class="text-center">Site Generators</h1>
+  <h1 class="text-center">Service Catalog</h1>
   <p class="text-center">
-    A List of Static Site Generators for Jamstack Sites
+    A List of Static Service Catalog for Jamstack Sites
   </p>
 </section>
 
@@ -34,16 +34,7 @@ layout: layouts/base.njk
             <label class="inline-flex pr-4 pb-2">
               <span class="sr-only">resources</span>
               <select data-filter-bind="resources" data-filter-delimiter="," class="text-black py-1 px-2 rounded-default border border-white bg-white">
-                <option selected value="">All resourcess</option>
-                {%- for resources in collections.generators | select("data.resourcess") | flatten | unique | sort(false, false) %}
-                <option value="{{ resources | lower }}">{{ resources }}</option>
-                {%- endfor %}
-              </select>
-            </label>
-            <label class="inline-flex pr-4 pb-2">
-              <span class="sr-only">resources</span>
-              <select data-filter-bind="resources" data-filter-delimiter="," class="text-black py-1 px-2 rounded-default border border-white bg-white">
-                <option selected value="">All resourcess</option>
+                <option selected value="">All resources</option>
                 {%- for resources in collections.generators | select("data.resources") | flatten | unique | sort(false, false) %}
                 <option value="{{ resources | lower }}">{{ resources }}</option>
                 {%- endfor %}
@@ -57,7 +48,7 @@ layout: layouts/base.njk
             <label class="inline-flex pr-4 pb-2">
               <span class="sr-only">Sort by</span>
               <select data-sort class="text-black py-1 px-2 rounded-default border border-white bg-white">
-                <option selected value="githubstars-numeric-descending">GitHub Stars</option>
+                <option selected value="githubstars-numeric-descending">Section</option>
                 <option value="name">Name</option>
               </select>
             </label>
@@ -74,9 +65,6 @@ layout: layouts/base.njk
 </section>
 
 <section class="mt-12">
-  <h2 class="text-white font-semi-bold text-3xl">Contribute</h2>
-  <p>
-    Should your site be featured here in this gallery? Let us know about it by <a href="{{ pkg.repository.url }}" target="_BLANK" rel="noopener">opening a pull request</a>.
-  </p>
+  
 </section>
 

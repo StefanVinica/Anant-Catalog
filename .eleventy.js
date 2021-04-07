@@ -148,10 +148,25 @@ module.exports = function(eleventyConfig) {
     });
   });
 
-  eleventyConfig.addFilter('sortTools', (arr, githubData) => {
+  //Filtering 
+  // eleventyConfig.addFilter('sortTools', (arr, githubData) => {
+  //   return arr.sort((a, b) => {
+  //     let aKey = githubData[a.data.section] ? (githubData[a.data.section].stars || 0) : 0;
+  //     let bKey = githubData[b.data.section] ? (githubData[b.data.section].stars || 0) : 0;
+  //     if(aKey < bKey) {
+  //       return 1;
+  //     } else if(aKey > bKey) {
+  //       return -1;
+  //     }
+  //     return 0;
+  //   });
+  // });
+
+   //Filtering 
+   eleventyConfig.addFilter('sortTools', (arr, githubData) => {
     return arr.sort((a, b) => {
-      let aKey = githubData[a.data.repo] ? (githubData[a.data.repo].stars || 0) : 0;
-      let bKey = githubData[b.data.repo] ? (githubData[b.data.repo].stars || 0) : 0;
+      let aKey = a.data.section ? a.data.section || 0 : 0;
+      let bKey = b.data.section ? b.data.section || 0 : 0;
       if(aKey < bKey) {
         return 1;
       } else if(aKey > bKey) {
