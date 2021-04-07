@@ -165,8 +165,8 @@ module.exports = function(eleventyConfig) {
    //Filtering 
    eleventyConfig.addFilter('sortTools', (arr, githubData) => {
     return arr.sort((a, b) => {
-      let aKey = a.data.section ? a.data.section || 0 : 0;
-      let bKey = b.data.section ? b.data.section || 0 : 0;
+      let aKey = a.data.section
+      let bKey = b.data.section
       if(aKey < bKey) {
         return 1;
       } else if(aKey > bKey) {

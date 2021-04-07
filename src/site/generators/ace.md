@@ -1,13 +1,11 @@
 ---
 title: Platform Discovery
-repo: platform repo
-homepage: https://anantcorp.atlassian.net/wiki/spaces/NET/pages/edit-v2/1726840868?draftShareId=5196c30e-fff7-4e44-905d-dda377ae7d17
+est: 24h
+Fulfillment Method: 
 section:
   - Operations
 resources:
   - Platform Analyst
-templates:
-  - Haml
 description: Ace is a static page generator.
 ---
 

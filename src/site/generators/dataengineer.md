@@ -1,11 +1,11 @@
 ---
-title: Platform Design
+title: Data Engineer
 est: 24h
 Fulfillment Method: 
 section:
-  - Architecture
+  - Resources
 resources:
-  - Platform Architect
+  - Data Engineer
 
 description: Universal static site generator
 startertemplaterepo: https://github.com/punund/20ful-example

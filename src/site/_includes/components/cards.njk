@@ -1,7 +1,8 @@
 {% macro repo(item, loopIndex, githubData) %}
 <div id="{{item.id}}" class="generator-card flex flex-col h-full"
   data-sort-name="{{ item.data.title | lower }}"
-  {%- if githubData[item.data.repo].stars !== "" %} data-sort-githubstars-numeric-descending="{{ githubData[item.data.section].stars }}"{% endif %}
+  data-sort-section="{{ item.data.section }}"
+  {%- if item.data.section !== "" %} data-sort-githubstars-numeric-descending="{{ item.data.section }}"{% endif %}
   {%- if item.data.typeofcms %} data-filter-typeofcms="{{ item.data.typeofcms | lower }}"{% endif %}
   {%- if item.data.opensource %} data-filter-opensource="{{ item.data.opensource | lower }}"{% endif %}
   data-filter-template="{{ (item.data.templates or []) | join(",") | lower }}"
@@ -12,6 +13,7 @@
     {%- if item.data.section == 'Architecture'%} bg-gradient-card-sunrise
     {%- elseif item.data.section == 'Engineering'%} bg-gradient-card-blue
     {%- elseif item.data.section == 'Operations'%} bg-gradient-card-seafoam
+    {%- elseif item.data.section == 'Resources'%} bg-gradient-card-gold
     {%- endif -%}">
       {%- if item.data.opensource === "Yes" or item.data.opensource === "YES" or item.data.opensource === "yes" -%}
       <div class="text-xxs mb-2">
@@ -52,7 +54,7 @@
       </div>
       <dl class="grid grid-cols-5 gap-2 text-sm">
         {%- if item.data.section %}
-        <dt class="col-span-2 font-bold">section:</dt>
+        <dt class="col-span-2 font-bold">Section:</dt>
         <dd class="col-span-3">{{ item.data.section }}</dd>
         {%- endif %}
         {%- if item.data.templates and item.data.templates.length > 0 %}
@@ -60,12 +62,12 @@
         <dd class="col-span-3">{{ item.data.templates | join(", ") }}</dd>
         {%- endif %}
         {%- if item.data.resources and item.data.resources.length > 0 %}
-        <dt class="col-span-2 font-bold">resources:</dt>
+        <dt class="col-span-2 font-bold">Resources:</dt>
         <dd class="col-span-3">{{ item.data.resources | join(", ") }}</dd>
         {%- endif %}
-        {%- if item.data.typeofcms %}
-        <dt class="col-span-2 font-bold">Type:</dt>
-        <dd class="col-span-3">{{ item.data.typeofcms }}</dd>
+        {%- if item.data.est %}
+        <dt class="col-span-2 font-bold">Time Estimate:</dt>
+        <dd class="col-span-3">{{ item.data.est }}</dd>
         {%- endif %}
         {%- if item.data.supportedgenerators %}
         <dt class="col-span-2 font-bold">Supported Service Catalog:</dt>

@@ -1,17 +1,13 @@
 ---
 title: wData Model Design
-repo: data repo
-homepage: https://anantcorp.atlassian.net/wiki/spaces/NET/pages/edit-v2/1726840868?draftShareId=5196c30e-fff7-4e44-905d-dda377ae7d17
+est: 24h
+Fulfillment Method: 
 section:
   - Engineering
 resources:
   - DevOps Engineer
   - Data Engineer
-templates:
-  - Abell
-description: A JavaScript based static-site-generator to help you create JSON, Markdown, or static-data based websites.
-twitter: AbellLand
-startertemplaterepo: https://github.com/abelljs/abell-starter-minima
+description: desc
 ---
 
 Abell is a Node.js based static-site-generator to help you create JSON, Markdown, or static-data based websites. 
