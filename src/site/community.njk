@@ -8,42 +8,41 @@ layout: layouts/base.njk
 {% import "components/cards-meetup.njk" as meetup %}
 
 <section class="my-16 text-center">
-  <h1>Join the global community</h1>
-  <p class="w-4/5 mx-auto ">Our community members gather in many channels, online and in-person around the world, to learn about modern web development techniques and emerging technologies. Join the community to exchange ideas, find new opportunities and help build a better web.</p>
+  <h1>Join the Anant community</h1>
+  <p class="w-4/5 mx-auto ">Anant was born out of the needs of its clients. Frustrated individuals and businesses alike came to us with the same problems over and over again pertaining to their IT needs. We have expertise in data migration, working with legacy systems, ERPs, CRMs, and much more. Let us show you what's possible! Contact us at solutions@anant.us and let's explore your modern enterprise.</p>
 
   <div class="lg:w-2/3 mx-auto md:grid md:grid-cols-2 md:gap-6 lg:gap-8 my-12">
     {{ zinger.cta(
-        "Join the Slack",
-        "https://jamstack.org/slack",
+        "Anant knowledgebase",
+        "https://cassandra.link/",
         "bg-gradient-card-sunrise card-shadow hover:card-shadow-sunrise",
         "#logo-slack"
         )
     }}
     {{ zinger.cta(
-        "JamstackConf Twitter",
-        "https://twitter.com/jamstackconf",
+        "Anant Twitter",
+        "https://twitter.com/anantcorp",
         "bg-gradient-card-blue-seafoam card-shadow hover:card-shadow-blue-seafoam",
         "#logo-twitter"
         )
     }}
   </div>
-  <p class="pb-20 border-gray-400 border-b">
-    To participate in our community channels, it’s important to read and follow our <a href="/code-of-conduct">Code of Conduct</a>
-  </p>
+  
 </section>
 
 
 <section>
-  <h2>Community Mission</h2>
+  <h2>Focus</h2>
   <p class="mb-2">
-   Jamstack community members have a common mission to promote a web that is:
+   The recurring theme we found was that in today's age of information, knowledge is getting harder and harder to find. Whether it is due to the multitude of Software-as-a-Service products a company uses, or the difficulty of integrating legacy systems with newer platforms, our services and products can help.
   </p>
-  <ul class="list-disc list-inside">
-    <li>Free, open and independent</li>
-    <li>Performant and secure</li>
-    <li>Accessible across all devices and geographies</li>
-    <li>Based on standard technologies and compatible across platforms</li>
-  </ul>
+</section>
+
+<section>
+  <h2>Clients</h2>
+  <p class="mb-2">
+   We work on public and private web sites and applications for corporate and non-profit clients. We utilize our robust technology stack to rapidly build both turn-key applications and highly customized solutions. See more of the companies we have worked with below.
+  </p>
 </section>
 
 {% if meetups.length > 0 %}
@@ -69,7 +68,7 @@ layout: layouts/base.njk
 {% endif %}
 
 <section class="cards">
-  <h2 class="mb-12">Find a Local User Group</h2>
+  <h2 class="mb-12">The Apache® Cassandra™ Network</h2>
   <filter-container data-oninit>
     <form class="pb-4 filter-form">
       <div class="pb-2">
@@ -106,11 +105,5 @@ layout: layouts/base.njk
   </filter-container>
 </section>
 
-<section>
-  <h2>Start a Jamstack User Group</h2>
-  <p class="mb-4 w-3/4">
-    Don’t see a group near you? We love to support new user group leaders and help grow the community. We can connect you with other user group leaders to share content ideas, provide stickers and swag, and get you listed on the user group page.
-  </p>
-  <a href="mailto:community@jamstack.org" class="cta">Contact Us</a>
-</section>
+
 

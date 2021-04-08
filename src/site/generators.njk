@@ -55,7 +55,7 @@ layout: layouts/base.njk
           </div>
         </div>
       </form>
-      <div class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3" data-sort-children>
+      <div class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-2" data-sort-children>
       {% for item in collections.generators | sortTools(github) %}
         {{ cards.repo(item, loop.index0, github) }}
       {% endfor %}

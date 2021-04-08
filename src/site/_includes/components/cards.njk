@@ -3,7 +3,7 @@
   data-sort-name="{{ item.data.title | lower }}"
   data-sort-section="{{ item.data.section }}"
   {%- if item.data.section !== "" %} data-sort-githubstars-numeric-descending="{{ item.data.section }}"{% endif %}
-  {%- if item.data.typeofcms %} data-filter-typeofcms="{{ item.data.typeofcms | lower }}"{% endif %}
+  {%- if item.data.princpile %} data-filter-princpile="{{ item.data.princpile | lower }}"{% endif %}
   {%- if item.data.opensource %} data-filter-opensource="{{ item.data.opensource | lower }}"{% endif %}
   data-filter-template="{{ (item.data.templates or []) | join(",") | lower }}"
   {%- if item.data.section %} data-filter-section="{{ item.data.section | join(",") | lower }}"{% endif %}
@@ -14,6 +14,9 @@
     {%- elseif item.data.section == 'Engineering'%} bg-gradient-card-blue
     {%- elseif item.data.section == 'Operations'%} bg-gradient-card-seafoam
     {%- elseif item.data.section == 'Resources'%} bg-gradient-card-gold
+    {%- elseif item.data.princpile == 'Platform'%} bg-gradient-card-gold
+    {%- elseif item.data.princpile == 'Approach'%} bg-gradient-card-blue
+    {%- elseif item.data.princpile == 'Framework'%} bg-gradient-card-seafoam
     {%- endif -%}">
       {%- if item.data.opensource === "Yes" or item.data.opensource === "YES" or item.data.opensource === "yes" -%}
       <div class="text-xxs mb-2">
